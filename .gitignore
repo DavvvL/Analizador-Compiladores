@@ -1,0 +1,34 @@
+# Python virtual environment
+bin/
+include/
+lib/
+lib64/
+pyvenv.cfg
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PLY parser output
+parser.out
+parsetab.py
