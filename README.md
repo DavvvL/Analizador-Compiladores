@@ -1,38 +1,20 @@
-# 🐍 Analizador de Python — Léxico · Sintáctico · Semántico
+# Analizador de Python — Léxico · Sintáctico · Semántico
 
 Aplicación de escritorio desarrollada en Python que realiza los tres tipos de análisis de compiladores sobre código fuente estilo Python: **análisis léxico**, **análisis sintáctico** y **análisis semántico**, con una interfaz gráfica moderna y oscura.
 
 ---
 
-## ✨ Características
+## Características
 
-- 📋 **Análisis Léxico** — Tokeniza el código fuente e identifica cada elemento: palabras reservadas, identificadores, literales, operadores y símbolos de puntuación.
-- 🌳 **Análisis Sintáctico** — Construye y visualiza el **Árbol de Sintaxis Abstracta (AST)** usando un parser LALR basado en PLY, con soporte para indentación estilo Python.
-- 🖥️ **Análisis Semántico** — Detecta errores como variables no declaradas, funciones no definidas y tipos incompatibles.
-- 🎨 **Interfaz moderna** — Tema oscuro con CustomTkinter, editor con numeración de líneas, panel ajustable y tabla de tokens interactiva.
-- 📂 **Carga de archivos** — Soporte para abrir archivos `.py` directamente desde la aplicación.
-
----
-
-## 🖼️ Vista general de la interfaz
-
-```
-┌──────────────────────────────────────────────────────────┐
-│           Analizador de PYTHON                           │
-│    Análisis Léxico · Sintáctico · Semántico              │
-├────────────────────────╫─────────────────────────────────┤
-│                        ║  📋 Léxico  🌳 Sintáctico  🖥️ Semántico │
-│   📝 Editor de Código  ║                                 │
-│   (con numeración de   ║   Resultados del análisis       │
-│    líneas)             ║   seleccionado                  │
-├────────────────────────╨─────────────────────────────────┤
-│   ▶ Analizar    📂 Cargar Archivo    🗑 Limpiar Todo      │
-└──────────────────────────────────────────────────────────┘
-```
+- **Análisis Léxico** — Tokeniza el código fuente e identifica cada elemento: palabras reservadas, identificadores, literales, operadores y símbolos de puntuación.
+- **Análisis Sintáctico** — Construye y visualiza el **Árbol de Sintaxis Abstracta (AST)** usando un parser LALR basado en PLY, con soporte para indentación estilo Python.
+- **Análisis Semántico** — Detecta errores como variables no declaradas, funciones no definidas y tipos incompatibles.
+-  **Interfaz moderna** — Tema oscuro con CustomTkinter, editor con numeración de líneas, panel ajustable y tabla de tokens interactiva.
+-  **Carga de archivos** — Soporte para abrir archivos `.py` directamente desde la aplicación.
 
 ---
 
-## 🏗️ Estructura del proyecto
+## Estructura del proyecto
 
 ```
 python_analyzer_v2/
@@ -56,7 +38,7 @@ python_analyzer_v2/
 
 ---
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 ### Requisitos previos
 
@@ -96,7 +78,7 @@ python src/main.py
 
 ---
 
-## 📦 Dependencias
+## Dependencias
 
 | Librería | Versión mínima | Uso |
 |---|---|---|
@@ -106,7 +88,7 @@ python src/main.py
 
 ---
 
-## 🔍 Tokens reconocidos
+## Tokens reconocidos
 
 | Categoría | Elementos |
 |---|---|
@@ -130,46 +112,6 @@ python src/main.py
 - `print(...)` y `return`
 - Expresiones aritméticas y de comparación
 
----
 
-## 📝 Ejemplo de código
-
-```python
-x = 10
-y = 3.14
-nombre = "Hola Mundo"
-
-def suma(a, b):
-    resultado = a + b
-    return resultado
-
-def es_mayor(x, y):
-    if x > y:
-        print("x es mayor")
-        return True
-    else:
-        print("y es mayor o igual")
-        return False
-
-z = suma(x, 5)
-print(z)
-
-while x > 0:
-    x = x - 1
-
-if es_mayor(z, y):
-    print("Resultado correcto")
-```
-
----
-
-## 👤 Autor
-
-Desarrollado por **DavvvL**  
-Proyecto académico — Materia de Compiladores
-
----
-
-## 📄 Licencia
 
 Este proyecto es de uso académico y educativo.
