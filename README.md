@@ -52,7 +52,7 @@ git clone https://github.com/DavvvL/Analizador-Compiladores.git
 cd Analizador-Compiladores
 ```
 
-### 2. Crea y activa un entorno virtual (recomendado)
+### 2. Crea y activa un entorno virtual
 
 ```bash
 python -m venv venv
